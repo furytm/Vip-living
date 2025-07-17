@@ -13,10 +13,15 @@ export function Footer() {
 					{/* Logo and Description */}
 					<div className="space-y-4">
 						<div className="flex items-center space-x-2">
-							<div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
+							{/* <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
 								<Home className="w-5 h-5 text-white" />
 							</div>
-							<span className="text-xl font-bold text-white">VIP Living Centers</span>
+							<span className="text-xl font-bold text-white">VIP Living Centers</span> */}
+							<img
+								src="/logo.png"
+								alt="logo"
+								className="w-50"
+							/>
 						</div>
 						<p className="text-slate-400 text-sm leading-relaxed">
 							Providing exceptional assisted living care with dignity and compassion
@@ -84,11 +89,7 @@ export function Footer() {
 							</div>
 							<div className="flex items-start space-x-2">
 								<MapPin className="w-4 h-4 text-emerald-400 mt-0.5" />
-								<span>
-									123 Peaceful Lane
-									<br />
-									South Irving, TX 75060
-								</span>
+								<span>3219 Vinson Ct, Irving, TX 75060, USA</span>
 							</div>
 						</div>
 					</div>
@@ -96,8 +97,8 @@ export function Footer() {
 
 				<div className="border-t border-slate-800 pt-8 text-center">
 					<p className="text-sm text-slate-500">
-						© {currentYear} VIP Living Centers. All rights reserved. | Licensed Assisted Living
-						Facility
+						© {currentYear} VIP Living Centers. All rights reserved. | Licensed Assisted
+						Living Facility
 					</p>
 				</div>
 			</div>

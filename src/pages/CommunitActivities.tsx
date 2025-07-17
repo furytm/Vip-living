@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Link } from "react-router-dom";
 
 export default function CommunityActivitiesPage() {
 	const activities = [
@@ -356,13 +357,15 @@ export default function CommunityActivitiesPage() {
 							Join us for a day and see how our activities and community spirit can
 							enrich your life.
 						</p>
-						<Button
-							size="lg"
-							variant="secondary"
-							className="text-lg px-8">
-							Schedule a Visit
-							<ArrowRight className="w-5 h-5 ml-2" />
-						</Button>
+						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Button
+								size="lg"
+								variant="secondary"
+								className="text-lg px-8">
+								Schedule a Visit
+								<ArrowRight className="w-5 h-5 ml-2" />
+							</Button>
+						</Link>
 					</motion.div>
 				</div>
 			</section>

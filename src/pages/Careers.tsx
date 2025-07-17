@@ -20,6 +20,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import Testimonial from "@/components/home/Testimonial";
 
 export default function CareersPage() {
 	const [formData, setFormData] = useState({
@@ -326,9 +327,9 @@ export default function CareersPage() {
 							className="relative">
 							<div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
 								<img
-									src="/placeholder.svg?height=400&width=500"
+									src="/careers/culture.jpeg"
 									alt="VIP Living Centers workplace culture"
-									className="object-cover"
+									className="object-cover h-full w-full object-center"
 								/>
 							</div>
 						</motion.div>
@@ -382,6 +383,9 @@ export default function CareersPage() {
 						))}
 					</div>
 				</div>
+			</section>
+			<section>
+				<Testimonial testimonial="Not long ago, VIP Living Center in Irving, TX, was, for our family, a safe haven in a storm. Having suffered inadequate care at other facilities, we intensely focused on finding a satisfactory provider for Mom during her recovery from multiple health issues. Bing and his staff truly exhibit what is described in detail on their website. The explanation of services and attitudes is entirely accurate, with no exaggeration. Many older people are set in their ways and may find any change to their lives unsettling, but this care home masterfully covers all the critical issues—first with kindness and then with a complete and genuine regard for comfort and cleanliness. Safety and a pleasant atmosphere are not lacking in any regard. Professional respect for the staff by management is evident and allows each member to be at their best when interacting with resident patients. We were more than comforted to experience the large windows of access for visitation and never felt as if we were not welcome or that anything was being hidden from us regarding the true level of care provided regularly. Mom recovered in part, I believe, due to the high quality of care provided at VIP Living Center, and she was able to return home. Should another incident occur, or when we reach that final season of life when a care facility is necessary, we only hope that Bing and his staff will be available to receive us with the same diligent and loving methods we experienced for many months. Last but not least, we found Bing himself to be a hands-on manager and, therefore, fully aware of the true nature of the care being provided. He chooses to be available and introduces pleasant gestures of kindness as an unexpected surprise to the staff and residents, which always brought about good cheer to people doing their best to deal with life and hardships." name="Shawn Cook" />
 			</section>
 
 			{/* Open Positions */}

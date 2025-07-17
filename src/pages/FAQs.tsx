@@ -6,9 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function FAQsPage() {
 	const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+	const navigate = useNavigate();
 
 	const faqCategories = [
 		{
@@ -314,12 +316,14 @@ export default function FAQsPage() {
 						<motion.div
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}>
-							<Button
-								size="lg"
-								className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
-								Schedule a Personal Tour
-								<ArrowRight className="w-5 h-5 ml-2" />
-							</Button>
+							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Button
+									size="lg"
+									className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+									Schedule a Personal Tour
+									<ArrowRight className="w-5 h-5 ml-2" />
+								</Button>
+							</Link>
 						</motion.div>
 					</motion.div>
 				</div>

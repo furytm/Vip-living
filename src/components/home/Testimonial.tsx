@@ -20,7 +20,7 @@ function Testimonial({ testimonial, name }: { testimonial: string; name: string 
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
 				transition={{ delay: 0.4 }}
-				className="text-xl text-slate-600 leading-relaxed max-w-lg">
+				className="text-xl text-slate-600 leading-relaxed max-w-xl">
 				{testimonial}
 			</motion.p>
 			<motion.p
@@ -28,7 +28,7 @@ function Testimonial({ testimonial, name }: { testimonial: string; name: string 
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true }}
 				transition={{ delay: 0.5 }}>
-				{name}
+				-{" "}{name}{" "}-
 			</motion.p>
 		</motion.div>
 	);

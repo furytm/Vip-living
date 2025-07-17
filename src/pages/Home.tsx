@@ -77,12 +77,14 @@ export default function HomePage() {
 							</div>
 
 							<div className="flex flex-col sm:flex-row gap-4">
-								<Button
-									size="lg"
-									className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-									Schedule a Tour
-									<ArrowRight className="w-5 h-5 ml-2" />
-								</Button>
+								<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+									<Button
+										size="lg"
+										className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
+										Schedule a Tour
+										<ArrowRight className="w-5 h-5 ml-2" />
+									</Button>
+								</Link>
 								<Button
 									size="lg"
 									variant="outline"
@@ -383,12 +385,14 @@ export default function HomePage() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						className="text-center mt-12">
-						<Button
-							size="lg"
-							className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-							Schedule Your Visit Today
-							<ArrowRight className="w-5 h-5 ml-2" />
-						</Button>
+						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Button
+								size="lg"
+								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
+								Schedule Your Visit Today
+								<ArrowRight className="w-5 h-5 ml-2" />
+							</Button>
+						</Link>
 					</motion.div>
 				</div>
 			</section>

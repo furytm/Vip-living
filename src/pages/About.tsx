@@ -14,6 +14,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import MapEmbed from "@/components/Map";
+import { Link } from "react-router-dom";
 
 export default function AboutPage() {
 	const values = [
@@ -99,12 +101,14 @@ export default function AboutPage() {
 								</p>
 							</div>
 
-							<Button
-								size="lg"
-								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-								Schedule a Tour
-								<ArrowRight className="w-5 h-5 ml-2" />
-							</Button>
+							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Button
+									size="lg"
+									className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
+									Schedule a Tour
+									<ArrowRight className="w-5 h-5 ml-2" />
+								</Button>
+							</Link>
 						</motion.div>
 
 						<motion.div
@@ -113,12 +117,20 @@ export default function AboutPage() {
 							transition={{ delay: 0.2 }}
 							className="relative">
 							<div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
-								<img
-									src="/placeholder.svg?height=500&width=600"
+								{/* <img
+									src="/careers/culture.jpeg"
 									alt="VIP Living Centers facility exterior"
-									className="object-cover"
+									className="object-cover h-full w-full object-center"
+								/> */}
+								<video
+									controls
+									loop
+									poster="https://viplivingcenters.com/wp-content/themes/divi-master/img/headers/header-sitting.jpg"
+									playsInline
+									className="object-cover h-full w-full object-center"
+									src="https://web.archive.org/web/20240423102657im_/https://viplivingcenters.com/wp-content/uploads/2021/08/VIP-VIDEO.mp4"
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+								{/* <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" /> */}
 							</div>
 
 							{/* Floating stats cards */}
@@ -223,9 +235,9 @@ export default function AboutPage() {
 							className="relative">
 							<div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
 								<img
-									src="/placeholder.svg?height=400&width=500"
+									src="/about/smiling-woman.jpeg"
 									alt="VIP Living Centers interior common area"
-									className="object-cover"
+									className="object-cover h-full w-full object-center"
 								/>
 							</div>
 						</motion.div>
@@ -361,13 +373,14 @@ export default function AboutPage() {
 							whileInView={{ opacity: 1, x: 0 }}
 							viewport={{ once: true }}
 							className="relative">
-							<div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
+							<MapEmbed />
+							{/* <div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
 								<img
 									src="/placeholder.svg?height=400&width=500"
 									alt="VIP Living Centers facility location"
 									className="object-cover"
 								/>
-							</div>
+							</div> */}
 						</motion.div>
 					</div>
 				</div>
@@ -389,13 +402,15 @@ export default function AboutPage() {
 							Schedule a personal tour and see our caring community in action.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Button
-								size="lg"
-								variant="secondary"
-								className="text-lg px-8">
-								Schedule a Tour
-								<ArrowRight className="w-5 h-5 ml-2" />
-							</Button>
+							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Button
+									size="lg"
+									variant="secondary"
+									className="text-lg px-8">
+									Schedule a Tour
+									<ArrowRight className="w-5 h-5 ml-2" />
+								</Button>
+							</Link>
 							<Button
 								size="lg"
 								variant="outline"

@@ -2,12 +2,13 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "@/assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "@/components/ui/button";
 
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const navigate = useNavigate();
 
 	const navItems = [
 		{ name: "Services", href: "/services" },
@@ -30,7 +31,7 @@ export function Header() {
 							to="/"
 							className="flex items-center space-x-2">
 							<img
-								src={logo}
+								src="/logo.png"
 								alt="logo"
 								className="w-50"
 							/>
@@ -60,9 +61,11 @@ export function Header() {
 								</Link>
 							</motion.div>
 						))}
-						<Button className="bg-emerald-600 hover:bg-emerald-700">
-							Schedule Visit
-						</Button>
+						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Button className="bg-emerald-600 hover:bg-emerald-700">
+								Schedule Visit
+							</Button>
+						</Link>
 					</nav>
 
 					{/* Mobile Menu Button */}
@@ -89,9 +92,11 @@ export function Header() {
 									{item.name}
 								</Link>
 							))}
-							<Button className="bg-emerald-600 hover:bg-emerald-700 w-fit">
-								Schedule Visit
-							</Button>
+							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Button className="bg-emerald-600 hover:bg-emerald-700 w-fit">
+									Schedule Visit
+								</Button>
+							</Link>
 						</div>
 					</motion.nav>
 				)}

@@ -10,6 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import MapEmbed from "@/components/Map";
+import { Link } from "react-router-dom";
 
 export default function ContactPage() {
 	const [formData, setFormData] = useState({
@@ -101,13 +103,14 @@ export default function ContactPage() {
 							Have questions about our services or want to schedule a tour? We'd love
 							to hear from you and help you learn more about VIP Living Centers.
 						</p>
-
-						<Button
-							size="lg"
-							className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
-							Schedule a Tour
-							<ArrowRight className="w-5 h-5 ml-2" />
-						</Button>
+						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Button
+								size="lg"
+								className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+								Schedule a Tour
+								<ArrowRight className="w-5 h-5 ml-2" />
+							</Button>
+						</Link>
 					</motion.div>
 				</div>
 			</section>
@@ -411,11 +414,12 @@ export default function ContactPage() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						className="bg-slate-100 rounded-2xl h-96 flex items-center justify-center">
-						<div className="text-center text-slate-500">
+						<MapEmbed />
+						{/* <div className="text-center text-slate-500">
 							<MapPin className="w-16 h-16 mx-auto mb-4" />
 							<p className="text-lg">Interactive Map Coming Soon</p>
 							<p className="text-sm">123 Peaceful Lane, South Irving, TX 75060</p>
-						</div>
+						</div> */}
 					</motion.div>
 				</div>
 			</section>

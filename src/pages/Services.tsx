@@ -11,14 +11,18 @@ import {
 	Bath,
 	Shirt,
 	Shield,
+	Section,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import ctaBacground from "../../public/services/trees.jpg";
+import Testimonial from "@/components/home/Testimonial";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function ServicesPage() {
+	const navigate = useNavigate();
 	const services = [
 		{
 			icon: Heart,
@@ -168,13 +172,14 @@ export default function ServicesPage() {
 							designed to support your independence while ensuring your safety,
 							comfort, and well-being.
 						</p>
-
-						<Button
-							size="lg"
-							className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-							Schedule a Tour
-							<ArrowRight className="w-5 h-5 ml-2" />
-						</Button>
+						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Button
+								size="lg"
+								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
+								Schedule a Tour
+								<ArrowRight className="w-5 h-5 ml-2" />
+							</Button>
+						</Link>
 					</motion.div>
 				</div>
 			</section>
@@ -268,7 +273,12 @@ export default function ServicesPage() {
 					</div>
 				</div>
 			</section>
-
+			<section>
+				<Testimonial
+					testimonial="My father told me that the last two weeks were the best days he had had for a long while. My only regret was I found VIP Living Centers too late."
+					name="Steward Rake"
+				/>
+			</section>
 			{/* Additional Services */}
 			<section className="py-20 bg-slate-50">
 				<div className="container mx-auto px-4">
@@ -317,14 +327,14 @@ export default function ServicesPage() {
 			</section>
 
 			{/* CTA Section */}
-			<section 
-			style={{
-				backgroundImage: `url(${ctaBacground})`,
-				backgroundPosition: "center",
-				backgroundSize: "cover",
-				backgroundAttachment: "fixed"
-			}}
-			className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
+			<section
+				style={{
+					backgroundImage: `url(${ctaBacground})`,
+					backgroundPosition: "center",
+					backgroundSize: "cover",
+					backgroundAttachment: "fixed",
+				}}
+				className="py-20 bg-gradient-to-r from-emerald-600 to-teal-600">
 				<div className="container mx-auto px-4 text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
@@ -339,13 +349,15 @@ export default function ServicesPage() {
 							your specific needs.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Button
-								size="lg"
-								variant="secondary"
-								className="text-lg px-8">
-								Schedule a Tour
-								<ArrowRight className="w-5 h-5 ml-2" />
-							</Button>
+							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+								<Button
+									size="lg"
+									variant="secondary"
+									className="text-lg px-8">
+									Schedule a Tour
+									<ArrowRight className="w-5 h-5 ml-2" />
+								</Button>
+							</Link>
 							<Button
 								size="lg"
 								variant="outline"
