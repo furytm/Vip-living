@@ -11,7 +11,7 @@ import {
 	Bath,
 	Shirt,
 	Shield,
-	Section,
+	
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -19,10 +19,10 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import ctaBacground from "../../public/services/trees.jpg";
 import Testimonial from "@/components/home/Testimonial";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ServicesPage() {
-	const navigate = useNavigate();
+
 	const services = [
 		{
 			icon: Heart,

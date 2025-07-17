@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Link, useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 export default function FAQsPage() {
 	const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-	const navigate = useNavigate();
+
 
 	const faqCategories = [
 		{
