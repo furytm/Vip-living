@@ -35,15 +35,15 @@ export default function ContactPage() {
 		{
 			icon: Mail,
 			title: "Email Us",
-			info: "info@viplivingcenters.com",
+			info: "info@viplivingcenter.com",
 			description: "We'll respond within 24 hours",
-			action: "mailto:info@viplivingcenters.com",
+			action: "mailto:info@viplivingcenter.com",
 			color: "emerald",
 		},
 		{
 			icon: MapPin,
 			title: "Visit Us",
-			info: "123 Peaceful Lane, South Irving, TX 75060",
+			info: "3219 Vinson Ct, Irving, TX 75060",
 			description: "Tours available by appointment",
 			action: "#",
 			color: "purple",

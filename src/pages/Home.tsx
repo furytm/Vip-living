@@ -345,8 +345,8 @@ export default function HomePage() {
 							{
 								icon: Mail,
 								title: "Email Us",
-								info: "info@viplivingcenters.com",
-								action: "mailto:info@viplivingcenters.com",
+								info: "info@viplivingcenter.com",
+								action: "mailto:info@viplivingcenter.com",
 							},
 							{
 								icon: MapPin,
