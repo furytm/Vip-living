@@ -43,131 +43,150 @@ export default function HomePage() {
 			<Header />
 
 			{/* Hero Section */}
-			<section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-				<div className="absolute inset-0 bg-gradient-to-br from-emerald-50 via-teal-50 to-slate-100" />
-				<div className="container mx-auto px-4 py-20 relative z-10">
-					<div className="grid lg:grid-cols-2 gap-12 items-center">
-						<motion.div
-							initial={{ opacity: 0, x: -50 }}
-							animate={{ opacity: 1, x: 0 }}
-							transition={{ duration: 0.8 }}
-							className="space-y-8">
-							<div className="space-y-4">
-								<motion.div
+			{/* Hero Section with Overlapping Title */}
+			<section className="relative pt-20 overflow-hidden">
+				{/* Hero Image */}
+				<div className="relative w-full h-[50dvh] lg:h-[80dvh]">
+					<img
+						src="/low-angle-smiley-senior-couple-with-coffee-cups.jpg"
+						alt="VIP Living Centers - Happy residents enjoying community life"
+						className="object-cover w-full h-full"
+					/>
+					<div className="absolute inset-0 bg-black/20" />
+
+					{/* 5-star care and Licensed badges */}
+					<motion.div
+						initial={{ opacity: 0, x: -50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ delay: 0.2 }}
+						className="absolute top-28 left-4 md:left-12 z-20">
+						<div className="bg-white/90 backdrop-blur-sm rounded-lg px-6 py-4 items-center space-x-3 shadow-md hidden lg:flex">
+							<Star className="w-6 h-6 text-emerald-500" />
+							<div>
+								<span className="text-slate-800 font-semibold text-lg">
+									5-Star Care
+								</span>
+								<p className="text-sm text-slate-600">Exceptional service</p>
+							</div>
+						</div>
+					</motion.div>
+
+					<motion.div
+						initial={{ opacity: 0, x: 50 }}
+						animate={{ opacity: 1, x: 0 }}
+						transition={{ delay: 0.3 }}
+						className="absolute bottom-28 right-4 md:right-12 z-20">
+						<div className="bg-white/90 backdrop-blur-sm rounded-lg px-6 py-4 hidden lg:block items-center space-x-3 shadow-md">
+							<Shield className="w-6 h-6 text-emerald-500" />
+							<div>
+								<span className="text-slate-800 font-semibold text-lg">
+									Licensed Facility
+								</span>
+								<p className="text-sm text-slate-600">State certified</p>
+							</div>
+						</div>
+					</motion.div>
+
+					{/* Overlapping Title Content */}
+					<div className="absolute bottom-0 left-0 right-0 flex justify-center px-4">
+						<div className="bg-emerald-50 backdrop-blur-sm max-w-4xl w-full mx-4 rounded-t-2xl shadow-lg py-5 lg:py-10">
+							<motion.div
+								initial={{ opacity: 0, y: 50 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ duration: 0.8, delay: 0.3 }}
+								className="text-center space-y-4">
+								<motion.p
 									initial={{ opacity: 0, y: 20 }}
 									animate={{ opacity: 1, y: 0 }}
-									transition={{ delay: 0.2 }}
-									className="inline-flex items-center px-4 py-2 bg-emerald-100 text-emerald-800 rounded-full text-sm font-medium">
-									<Heart className="w-4 h-4 mr-2" />
+									transition={{ delay: 0.5 }}
+									className="bg-emerald-100 text-emerald-700 rounded-full px-3 py-1 flex items-center justify-center text-base font-medium">
+									<Heart className="w-5 h-5 mr-2" />
 									Compassionate Care Since 1995
-								</motion.div>
+								</motion.p>
 
-								<h1 className="text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
+								<motion.h1
+									initial={{ opacity: 0, y: 20 }}
+									animate={{ opacity: 1, y: 0 }}
+									transition={{ delay: 0.7 }}
+									className="text-2xl lg:text-5xl font-bold text-slate-800 leading-tight">
 									A Home Away from{" "}
 									<span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
 										Home
 									</span>
-								</h1>
+								</motion.h1>
 
-								<p className="text-xl text-slate-600 leading-relaxed max-w-lg">
-									Experience exceptional assisted living in South Irving with
-									personalized care, family-friendly atmosphere, and
-									dignity-focused services.
-								</p>
-							</div>
-
-							<div className="flex flex-col sm:flex-row gap-4">
-								<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
-									<Button
-										size="lg"
-										className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
-										Schedule a Tour
-										<ArrowRight className="w-5 h-5 ml-2" />
-									</Button>
-								</Link>
-								<Button
-									size="lg"
-									variant="outline"
-									className="text-lg px-8 border-slate-300 bg-transparent">
-									Learn More
-								</Button>
-							</div>
-
-							<div className="flex items-center space-x-8 pt-4">
-								<div className="text-center">
-									<div className="text-2xl font-bold text-slate-800">25+</div>
-									<div className="text-sm text-slate-600">Years Experience</div>
-								</div>
-								<div className="text-center">
-									<div className="text-2xl font-bold text-slate-800">100+</div>
-									<div className="text-sm text-slate-600">Happy Residents</div>
-								</div>
-								<div className="text-center">
-									<div className="text-2xl font-bold text-slate-800">24/7</div>
-									<div className="text-sm text-slate-600">Care Available</div>
-								</div>
-							</div>
-						</motion.div>
-
-						<motion.div
-							initial={{ opacity: 0, x: 50 }}
-							animate={{ opacity: 1, x: 0 }}
-							transition={{ duration: 0.8, delay: 0.2 }}
-							className="relative">
-							<div className="relative w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
-								<img
-									src="/low-angle-smiley-senior-couple-with-coffee-cups.jpg"
-									alt="VIP Living Centers - Happy resident"
-									className="object-cover object-center h-full w-full"
-								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-							</div>
-
-							{/* Floating Cards */}
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 1 }}
-								className="absolute -left-6 top-20 bg-white rounded-xl shadow-lg p-4 max-w-xs">
-								<div className="flex items-center space-x-3">
-									<div className="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-										<Star className="w-5 h-5 text-emerald-600" />
-									</div>
-									<div>
-										<div className="font-semibold text-slate-800">
-											5-Star Care
-										</div>
-										<div className="text-sm text-slate-600">
-											Exceptional service
-										</div>
-									</div>
-								</div>
+								{/* Decorative underline */}
+								<div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full" />
 							</motion.div>
-
-							<motion.div
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ delay: 1.2 }}
-								className="absolute -right-6 bottom-20 bg-white rounded-xl shadow-lg p-4 max-w-xs">
-								<div className="flex items-center space-x-3">
-									<div className="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
-										<Shield className="w-5 h-5 text-teal-600" />
-									</div>
-									<div>
-										<div className="font-semibold text-slate-800">
-											Licensed Facility
-										</div>
-										<div className="text-sm text-slate-600">
-											State certified
-										</div>
-									</div>
-								</div>
-							</motion.div>
-						</motion.div>
+						</div>
 					</div>
 				</div>
 			</section>
 
+			{/* Main Content Section (formerly part of hero) */}
+			<section className="bg-emerald-50 pt-0 pb-20">
+				<div className="container mx-auto px-4">
+					<motion.div
+						initial={{ opacity: 0, y: 30 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						className="text-center max-w-4xl mx-auto space-y-8">
+						<motion.p
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.4 }}
+							className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
+							Experience exceptional assisted living in South Irving with personalized
+							care, family-friendly atmosphere, and dignity-focused services.
+						</motion.p>
+
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.6 }}
+							className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
+							<Button
+								size="lg"
+								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-10 py-4 h-auto">
+								Schedule a Tour
+								<ArrowRight className="w-5 h-5 ml-2" />
+							</Button>
+							<Button
+								size="lg"
+								variant="outline"
+								className="text-lg px-10 py-4 h-auto border-emerald-600 text-emerald-600 hover:bg-emerald-50 bg-transparent">
+								Learn More
+							</Button>
+						</motion.div>
+
+						{/* Stats */}
+						<motion.div
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.8 }}
+							className="flex items-center justify-center space-x-12 pt-8 border-t border-slate-200 mt-12">
+							<div className="text-center">
+								<div className="text-3xl font-bold text-slate-800">25+</div>
+								<div className="text-sm text-slate-600 font-medium">
+									Years Experience
+								</div>
+							</div>
+							<div className="text-center">
+								<div className="text-3xl font-bold text-slate-800">100+</div>
+								<div className="text-sm text-slate-600 font-medium">
+									Happy Residents
+								</div>
+							</div>
+							<div className="text-center">
+								<div className="text-3xl font-bold text-slate-800">24/7</div>
+								<div className="text-sm text-slate-600 font-medium">
+									Care Available
+								</div>
+							</div>
+						</motion.div>
+					</motion.div>
+				</div>
+			</section>
 			{/* Services Section */}
 			<section
 				id="services"
@@ -346,7 +365,7 @@ export default function HomePage() {
 								icon: Mail,
 								title: "Email Us",
 								info: "info@viplivingcenter.com",
-								action: "mailto:info@viplivingcenter.com",
+								action: "mailto:info@viplivingcenters.com",
 							},
 							{
 								icon: MapPin,
@@ -385,7 +404,9 @@ export default function HomePage() {
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
 						className="text-center mt-12">
-						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+						<Link
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to="/contact">
 							<Button
 								size="lg"
 								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">

@@ -11,18 +11,16 @@ import {
 	Bath,
 	Shirt,
 	Shield,
-	
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import ctaBacground from "../../public/services/trees.jpg";
+import ctaBacground from "/services/trees.jpg";
 import Testimonial from "@/components/home/Testimonial";
 import { Link } from "react-router-dom";
 
 export default function ServicesPage() {
-
 	const services = [
 		{
 			icon: Heart,
@@ -37,7 +35,7 @@ export default function ServicesPage() {
 				"Toileting Assistance",
 			],
 			color: "emerald",
-			img: "/services/personal.jpg",
+			img: "/services/new_image1.jpeg",
 		},
 		{
 			icon: Stethoscope,
@@ -97,7 +95,7 @@ export default function ServicesPage() {
 				"Special Events",
 			],
 			color: "teal",
-			img: "/services/nutrition.jpg",
+			img: "/services/new_image3.jpeg",
 		},
 		{
 			icon: Shield,
@@ -112,7 +110,7 @@ export default function ServicesPage() {
 				"On-Call Support",
 			],
 			color: "red",
-			img: "/services/service.jpeg",
+			img: "/services/new_image2.jpeg",
 		},
 	];
 
@@ -172,7 +170,10 @@ export default function ServicesPage() {
 							designed to support your independence while ensuring your safety,
 							comfort, and well-being.
 						</p>
-						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+						<Link 
+						// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+						to={"/contact"}
+						>
 							<Button
 								size="lg"
 								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
@@ -349,7 +350,10 @@ export default function ServicesPage() {
 							your specific needs.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link 
+							// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+							to="/contact"
+							>
 								<Button
 									size="lg"
 									variant="secondary"

@@ -106,7 +106,7 @@ export default function ContactPage() {
 						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
 							<Button
 								size="lg"
-								className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+								className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
 								Schedule a Tour
 								<ArrowRight className="w-5 h-5 ml-2" />
 							</Button>
@@ -382,7 +382,7 @@ export default function ContactPage() {
 										<Button
 											type="submit"
 											size="lg"
-											className="w-full bg-blue-600 hover:bg-blue-700">
+											className="w-full bg-emerald-600 hover:bg-emerald-700">
 											Send Message
 											<Send className="w-5 h-5 ml-2" />
 										</Button>

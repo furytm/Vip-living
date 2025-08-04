@@ -1,4 +1,4 @@
-import {  Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -97,7 +97,7 @@ export function Footer() {
 
 				<div className="border-t border-slate-800 pt-8 text-center">
 					<p className="text-sm text-slate-500">
-						© {currentYear} VIP Living Centers. All rights reserved. | Licensed Assisted
+						© {currentYear} VIP Living Center. All rights reserved. | Licensed Assisted
 						Living Facility
 					</p>
 				</div>

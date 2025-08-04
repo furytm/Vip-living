@@ -6,11 +6,10 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function FAQsPage() {
 	const [openFAQ, setOpenFAQ] = useState<number | null>(null);
-
 
 	const faqCategories = [
 		{
@@ -129,7 +128,7 @@ export default function FAQsPage() {
 			<Header />
 
 			{/* Hero Section */}
-			<section className="relative pt-24 pb-20 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+			<section className="relative pt-24 pb-20 bg-gradient-to-br from-green-50 via-emerald-50 to-white">
 				<div className="container mx-auto px-4">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
@@ -146,7 +145,7 @@ export default function FAQsPage() {
 
 						<h1 className="text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
 							Frequently Asked{" "}
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+							<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-300">
 								Questions
 							</span>
 						</h1>
@@ -159,7 +158,7 @@ export default function FAQsPage() {
 
 						<Button
 							size="lg"
-							className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+							className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
 							Contact Us for More Info
 							<ArrowRight className="w-5 h-5 ml-2" />
 						</Button>
@@ -316,10 +315,12 @@ export default function FAQsPage() {
 						<motion.div
 							whileHover={{ scale: 1.05 }}
 							whileTap={{ scale: 0.95 }}>
-							<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
+							<Link
+								// to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
+								to="/contact">
 								<Button
 									size="lg"
-									className="bg-blue-600 hover:bg-blue-700 text-lg px-8">
+									className="bg-emerald-600 hover:bg-emerald-700 text-lg px-8">
 									Schedule a Personal Tour
 									<ArrowRight className="w-5 h-5 ml-2" />
 								</Button>

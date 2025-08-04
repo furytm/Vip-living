@@ -343,7 +343,7 @@ export default function CommunityActivitiesPage() {
 			</section>
 
 			{/* CTA Section */}
-			<section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600">
+			<section className="py-20 bg-gradient-to-r from-green-800 to-emerald-300">
 				<div className="container mx-auto px-4 text-center">
 					<motion.div
 						initial={{ opacity: 0, y: 30 }}
@@ -361,7 +361,7 @@ export default function CommunityActivitiesPage() {
 							<Button
 								size="lg"
 								variant="secondary"
-								className="text-lg px-8">
+								className="text-lg px-8 border">
 								Schedule a Visit
 								<ArrowRight className="w-5 h-5 ml-2" />
 							</Button>
