@@ -46,7 +46,7 @@ export default function ContactPage() {
 			info: "3219 Vinson Ct, Irving, TX 75060",
 			description: "Tours available by appointment",
 			action: "#",
-			color: "purple",
+			color: "blue",
 		},
 	];
 
@@ -94,7 +94,7 @@ export default function ContactPage() {
 
 						<h1 className="text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
 							Get in{" "}
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
+							<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-300">
 								Touch
 							</span>
 						</h1>

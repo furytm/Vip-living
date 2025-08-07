@@ -25,7 +25,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"Live music performances, sing-alongs, and therapeutic music sessions that engage and uplift our residents",
 			schedule: "Daily at 3:00 PM",
-			color: "purple",
+			color: "black",
 			image: "/activities/music.jpeg",
 		},
 		{
@@ -34,7 +34,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"Creative workshops including painting, pottery, and seasonal crafts to stimulate creativity and self-expression",
 			schedule: "Tuesdays & Thursdays",
-			color: "pink",
+			color: "black",
 			image: "/activities/art.jpeg",
 		},
 		{
@@ -43,7 +43,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"Engaging book discussions, storytelling sessions, and trivia competitions to keep minds sharp and active",
 			schedule: "Wednesdays at 10:00 AM",
-			color: "blue",
+			color: "black",
 			image: "/activities/book.jpeg",
 		},
 		{
@@ -52,7 +52,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"Therapeutic gardening and bonsai cultivation classes that provide peaceful, meditative activities",
 			schedule: "Monday & Friday",
-			color: "green",
+			color: "black",
 			image: "/activities/bonsai.jpeg",
 		},
 		{
@@ -61,7 +61,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"Watching games together, fantasy football leagues, and sports-related activities for sports enthusiasts",
 			schedule: "Game Days",
-			color: "orange",
+			color: "black",
 			image: "/activities/sport.jpeg",
 		},
 		{
@@ -70,7 +70,7 @@ export default function CommunityActivitiesPage() {
 			description:
 				"ZOOM sessions for virtual visits with family and participation in online gourmet cooking classes",
 			schedule: "As Scheduled",
-			color: "indigo",
+			color: "black",
 			image: "/activities/tech.jpeg",
 		},
 	];
