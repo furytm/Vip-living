@@ -35,15 +35,15 @@ export default function ContactPage() {
 		{
 			icon: Mail,
 			title: "Email Us",
-			info: "info@viplivingcenter.com",
+			info: "info@viplivingcenters.com",
 			description: "We'll respond within 24 hours",
-			action: "mailto:info@viplivingcenter.com",
+			action: "mailto:info@viplivingcenters.com",
 			color: "emerald",
 		},
 		{
 			icon: MapPin,
 			title: "Visit Us",
-			info: "3219 Vinson Ct, Irving, TX 75060",
+			info: "3219 Vinson Ct, Irving, TX 75060, USA",
 			description: "Tours available by appointment",
 			action: "#",
 			color: "blue",
@@ -94,14 +94,14 @@ export default function ContactPage() {
 
 						<h1 className="text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
 							Get in{" "}
-							<span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-300">
+							<span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-600">
 								Touch
 							</span>
 						</h1>
 
 						<p className="text-xl text-slate-600 leading-relaxed mb-8">
 							Have questions about our services or want to schedule a tour? We'd love
-							to hear from you and help you learn more about VIP Living Centers.
+							to hear from you and help you learn more about VIP Living Center.
 						</p>
 						<Link to="https://forms.gle/eVe8DCEiW2Bk6QFq9">
 							<Button
@@ -404,7 +404,7 @@ export default function ContactPage() {
 						className="text-center mb-12">
 						<h2 className="text-4xl font-bold text-slate-800 mb-4">Find Us</h2>
 						<p className="text-xl text-slate-600 max-w-2xl mx-auto">
-							Located in a peaceful cul-de-sac in South Irving, our facility is easily
+							Located in a 3219 Vinson Ct, Irving, TX 75060, USA, our facility is easily
 							accessible while maintaining a quiet, residential atmosphere.
 						</p>
 					</motion.div>

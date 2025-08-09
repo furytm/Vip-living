@@ -39,7 +39,7 @@ export function Header() {
 							</div>
 							<div>
 								<h1 className="text-xl font-bold text-slate-800">VIP Living</h1>
-								<p className="text-xs text-slate-600">Centers</p>
+								<p className="text-xs text-slate-600">Center</p>
 							</div> */}
 						</Link>
 					</motion.div>

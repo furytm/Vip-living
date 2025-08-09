@@ -206,7 +206,7 @@ export default function CareersPage() {
 							</h1>
 
 							<p className="text-xl text-slate-600 leading-relaxed">
-								Join our compassionate team at VIP Living Centers where our passion
+								Join our compassionate team at VIP Living Center where our passion
 								for service unites us. We put our employees first to create a
 								supportive workplace that better serves our residents.
 							</p>
@@ -290,7 +290,7 @@ export default function CareersPage() {
 							<h2 className="text-4xl font-bold text-slate-800">Our Culture</h2>
 							<div className="space-y-4 text-slate-600 leading-relaxed">
 								<p>
-									At VIP Living Centers, our passion for service is what unites
+									At VIP Living Center, our passion for service is what unites
 									us. We not only serve our residents, but we also serve our
 									employees. We put our employees first to create a supportive
 									workplace that, in turn, better serves our residents.

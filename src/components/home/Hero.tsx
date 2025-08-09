@@ -8,7 +8,7 @@ function Hero() {
 				alt="hero"
 				className="h-full w-full object-center object-cover"
 			/>
-			<p className="absolute top-1/2 right-1/2 font-bold text-3xl transform translate-x-50 bg-black/20 p-5">WELCOME TO VIP LIVING CENTERS</p>
+			<p className="absolute top-1/2 right-1/2 font-bold text-3xl transform translate-x-50 bg-black/20 p-5">WELCOME TO VIP LIVING CENTER</p>
 		</div>
 	);
 }

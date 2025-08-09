@@ -24,7 +24,7 @@ export default function FAQsPage() {
 					answer: "We are conveniently located in South Irving at the corner of a quiet cul-de-sac, providing a peaceful residential setting while maintaining easy access to medical facilities and family visits.",
 				},
 				{
-					question: "What makes VIP Living Centers different from other facilities?",
+					question: "What makes VIP Living Center different from other facilities?",
 					answer: "Our small size allows for personalized care and individual attention that larger facilities cannot provide. We maintain a low resident-to-staff ratio and create genuine family-like relationships with our residents and their families.",
 				},
 				{
@@ -79,7 +79,7 @@ export default function FAQsPage() {
 			title: "Daily Life & Family Involvement",
 			faqs: [
 				{
-					question: "What is daily life like at VIP Living Centers?",
+					question: "What is daily life like at VIP Living Center?",
 					answer: "Daily life is structured yet flexible, with regular meal times, engaging activities, personal care assistance as needed, and plenty of opportunities for social interaction. We strive to create a vibrant, inspiring, and purposeful lifestyle for our residents.",
 				},
 				{
@@ -151,7 +151,7 @@ export default function FAQsPage() {
 						</h1>
 
 						<p className="text-xl text-slate-600 leading-relaxed mb-8">
-							Find answers to common questions about VIP Living Centers, our services,
+							Find answers to common questions about VIP Living Center, our services,
 							and what to expect when choosing assisted living care for your loved
 							one.
 						</p>
@@ -267,7 +267,7 @@ export default function FAQsPage() {
 						</h2>
 						<p className="text-xl text-slate-600 mb-8">
 							Our caring team is here to help. Contact us directly for personalized
-							answers to your specific questions about VIP Living Centers.
+							answers to your specific questions about VIP Living Center.
 						</p>
 
 						<div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -303,7 +303,7 @@ export default function FAQsPage() {
 											<Mail className="w-6 h-6 text-purple-600" />
 										</motion.div>
 										<h3 className="font-semibold text-slate-800">Email Us</h3>
-										<p className="text-slate-600">info@viplivingcenters.com</p>
+										<p className="text-slate-600">info@viplivingcenter.com</p>
 										<p className="text-sm text-slate-500">
 											We'll respond within 24 hours
 										</p>

@@ -166,7 +166,7 @@ export default function ServicesPage() {
 						</h1>
 
 						<p className="text-xl text-slate-600 leading-relaxed mb-8">
-							At VIP Living Centers, we provide comprehensive assisted living services
+							At VIP Living Center, we provide comprehensive assisted living services
 							designed to support your independence while ensuring your safety,
 							comfort, and well-being.
 						</p>
@@ -276,7 +276,7 @@ export default function ServicesPage() {
 			</section>
 			<section>
 				<Testimonial
-					testimonial="My father told me that the last two weeks were the best days he had had for a long while. My only regret was I found VIP Living Centers too late."
+					testimonial="My father told me that the last two weeks were the best days he had had for a long while. My only regret was I found VIP Living Center too late."
 					name="Steward Rake"
 				/>
 			</section>

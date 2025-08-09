@@ -85,7 +85,7 @@ export default function AboutPage() {
 							<h1 className="text-5xl lg:text-6xl font-bold text-slate-800 leading-tight">
 								About{" "}
 								<span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-									VIP Living Centers
+									VIP Living Center
 								</span>
 							</h1>
 
@@ -122,7 +122,7 @@ export default function AboutPage() {
 							<div className="relative w-full h-[500px] rounded-2xl overflow-hidden shadow-xl">
 								{/* <img
 									src="/careers/culture.jpeg"
-									alt="VIP Living Centers facility exterior"
+									alt="VIP Living Center facility exterior"
 									className="object-cover h-full w-full object-center"
 								/> */}
 								<video
@@ -211,7 +211,7 @@ export default function AboutPage() {
 							</h2>
 							<div className="space-y-4 text-slate-600 leading-relaxed">
 								<p>
-									At VIP Living Centers, we believe that every individual deserves
+									At VIP Living Center, we believe that every individual deserves
 									to live with dignity, respect, and independence, regardless of
 									their care needs. Our mission is to provide exceptional assisted
 									living services in a warm, home-like environment.
@@ -223,7 +223,7 @@ export default function AboutPage() {
 									and families feel confident in their choice.
 								</p>
 								<p>
-									Our philosophy centers on treating each resident as a unique
+									Our philosophy center on treating each resident as a unique
 									individual with their own preferences, needs, and life story. We
 									celebrate these differences and work to enhance each person's
 									quality of life.
@@ -239,7 +239,7 @@ export default function AboutPage() {
 							<div className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
 								<img
 									src="/about/new_image4.jpeg"
-									alt="VIP Living Centers interior common area"
+									alt="VIP Living Center interior common area"
 									className="object-cover h-full w-full object-center"
 								/>
 							</div>
@@ -353,7 +353,7 @@ export default function AboutPage() {
 							<div className="space-y-4 text-slate-600 leading-relaxed">
 								<p>
 									Located in South Irving at the corner of a quiet cul-de-sac, VIP
-									Living Centers offers the perfect balance of peaceful
+									Living Center offers the perfect balance of peaceful
 									residential living and convenient access to medical facilities,
 									shopping, and family visits.
 								</p>

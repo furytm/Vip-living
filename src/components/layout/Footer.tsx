@@ -16,7 +16,7 @@ export function Footer() {
 							{/* <div className="w-8 h-8 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
 								<Home className="w-5 h-5 text-white" />
 							</div>
-							<span className="text-xl font-bold text-white">VIP Living Centers</span> */}
+							<span className="text-xl font-bold text-white">VIP Living Center</span> */}
 							<img
 								src="/logo.png"
 								alt="logo"
