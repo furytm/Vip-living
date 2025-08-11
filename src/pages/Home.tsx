@@ -57,7 +57,7 @@ export default function HomePage() {
       {/* Hero Section with Overlapping Title */}
       <section className="relative pt-20 overflow-hidden">
         {/* Hero Image */}
-        <div className="relative w-full h-[30dvh] lg:h-[80dvh]">
+        <div className="relative w-full h-[25dvh] lg:h-[80dvh]">
           <img
             src="/low-angle-smiley-senior-couple-with-coffee-cups.jpg"
             alt="VIP Living Centers - Happy residents enjoying community life"
@@ -113,7 +113,7 @@ export default function HomePage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
-                  className="bg-emerald-100 text-emerald-700 rounded-full px-3 py-1 flex items-center justify-center text-base font-medium"
+                  className="bg-emerald-100 text-emerald-700 rounded-full px-3 py-1 flex items-center justify-center text-base font-medium "
                 >
                   <Heart className="w-5 h-5 mr-2" />
                   Compassionate Care Since 1995
@@ -140,9 +140,9 @@ export default function HomePage() {
       </section>
 
       {/* Main Content Section (formerly part of hero) */}
-      <section className="bg-emerald-50 pt-12 lg:pt-0 pb-20">
+      <section className="bg-white lg:pt-0 pb-20 mt-40">
         <div className="lg:hidden flex justify-center px-4">
-          <div className="bg-emerald-50 backdrop-blur-sm max-w-4xl w-fullrounded-t-2xl py-5 lg:py-10">
+          <div className="bg-white backdrop-blur-sm max-w-4xl w-fullrounded-t-2xl py-5 lg:py-10">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
@@ -163,16 +163,17 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.7 }}
-                className="text-2xl lg:text-5xl font-bold text-slate-800 leading-tight"
+                className="text-2xl lg:text-5xl font-bold text-slate-800 leading-tight px-8"
               >
-                A Home Away from{" "}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-600">
-                  Home
+                WELCOME HOME{" "}
+                {/*<span className="text-transparent bg-clip-text block bg-gradient-to-r from-emerald-600 to-teal-600">*/}
+                <span className="text-slate-900 block text-md font-normal">
+                  VIP LIVING CENTER
                 </span>
               </motion.h1>
 
               {/* Decorative underline */}
-              <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full" />
+              <div className="w-60 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full" />
             </motion.div>
           </div>
         </div>

@@ -31,8 +31,11 @@ export function Header() {
 							<img
 								src="/logo.png"
 								alt="logo"
-								className="h-12"
+								className="h-5"
 							/>
+							<h1 className="text-md font-playwrite text-slate-900 font-bold">
+							VIP LIVING <br></br> CENTER
+							</h1>
 							{/* <div c
 							{/* <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center">
 								<Home className="w-6 h-6 text-white" />
