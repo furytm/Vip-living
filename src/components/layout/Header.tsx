@@ -19,7 +19,7 @@ export function Header() {
 
 	return (
 		<header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-slate-200 z-50">
-			<div className="container mx-auto px-2 py-4">
+			<div className="container mx-auto px-4 py-4">
 				<div className="flex items-center justify-between">
 					<motion.div
 						initial={{ opacity: 0, x: -20 }}
@@ -35,7 +35,7 @@ export function Header() {
 							/>
 							<div className="max-w-[200px]">
 								<h1 className=" text-[10px] lg:text-xs font-playread text-slate-900 font-normal">
-							VIP LIVING CENTER <br></br> A Home away from Home
+							VIP LIVING <br></br> CENTER
 							</h1></div>
 							
 							{/* <div c

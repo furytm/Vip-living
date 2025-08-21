@@ -65,7 +65,7 @@ export default function ServicesPage() {
 				"Nutritional Planning",
 			],
 			color: "orange",
-			img: "/services/lifestyle.jpg",
+			img: "/services/food.jpg",
 		},
 		{
 			icon: Home,
