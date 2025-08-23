@@ -140,7 +140,7 @@ export default function HomePage() {
       </section>
 
       {/* Main Content Section (formerly part of hero) */}
-      <section className="bg-white lg:pt-0 pb-20 mt-40">
+      <section className="bg-white lg:bg-emerald-50 lg:pt-0 pb-20 mt-40 lg:mt-0">
         <div className="lg:hidden flex justify-center px-4">
           <div className="bg-white backdrop-blur-sm max-w-4xl w-fullrounded-t-2xl py-5 lg:py-10">
             <motion.div
@@ -188,7 +188,7 @@ export default function HomePage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto"
+              className="text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto "
             >
               Experience exceptional assisted living in South Irving with
               personalized care, family-friendly atmosphere, and dignity-focused
@@ -490,7 +490,7 @@ export default function HomePage() {
       <Footer />
       <div className="sticky bottom-0 w-full backdrop-blur-sm border-t border-white  bg-emerald-50 z-50 grid lg:hidden grid-cols-2 ">
         <Link
-          to="/contact"
+          to="https://forms.gle/eVe8DCEiW2Bk6QFq9"
           className="border-r-2 border-white flex flex-col items-center justify-center
           py-2 gap-2 text-slate-900"
         >

@@ -34,7 +34,7 @@ export function Header() {
 								className="h-12 "
 							/>
 							<div className="max-w-[200px]">
-								<h1 className=" text-[10px] lg:text-xs font-playread text-slate-900 font-normal">
+								<h1 className=" text-sm lg:text-sm font-playread text-slate-900 font-normal">
 							VIP LIVING <br></br> CENTER
 							</h1></div>
 							
