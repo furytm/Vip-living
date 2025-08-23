@@ -59,7 +59,7 @@ export default function HomePage() {
         {/* Hero Image */}
         <div className="relative w-full h-[25dvh] lg:h-[80dvh]">
           <img
-            src="/low-angle-smiley-senior-couple-with-coffee-cups.jpg"
+            src="/banner2.png"
             alt="VIP Living Centers - Happy residents enjoying community life"
             className="object-cover w-full h-full"
           />
